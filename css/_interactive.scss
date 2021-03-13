@@ -1,0 +1,26 @@
+// The leader in interactive VR
+
+.interactive{
+    position: relative;
+    padding: 15vh 10rem 0 10rem;
+    min-height: 100vh;
+}
+.interactive_text{
+    padding: 6rem 6.75rem;
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    width: 50vw;
+    background: #fff;
+    box-sizing: border-box;
+}
+.interactive_text h1{
+    font-size: 4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.interactive_text p{
+    padding-right: 3rem;
+    line-height: 1.5rem;
+}
