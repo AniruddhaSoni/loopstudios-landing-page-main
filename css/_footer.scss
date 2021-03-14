@@ -5,61 +5,33 @@ footer{
 }
 .footer_container{
     display: flex;
-    flex-direction: column;
     color: white;
-}
-.logo_socialicons{
-    display: flex;
     justify-content: space-between;
 }
-.logo_socialicons h1{
-    font-size: 2rem;
-
-}
-.logo_socialicons ul{
+.logo_nav , .social_copyright{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.logo_socialicons ul li{
-    position: relative;
-    list-style: none;
-    padding: 0 0.5rem;
+.logo_nav h1{
+    font-size: 3rem;
     cursor: pointer;
 }
-.logo_socialicons ul li img{
-    pointer-events: none;
-}
-.logo_socialicons ul li::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 2px solid #fff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-.logo_socialicons ul li:hover::after{
-    transform: scaleX(1);
-    transform-origin: right;
-}
-.navlinks_copyright{
-    display: flex;
-    justify-content: space-between;
-}
-.navlinks ul{
+.navlinks ul{    
     display: flex;
 }
 .navlinks ul li{
-    position: relative;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     position: relative;
     list-style: none;
     margin-right: 2rem;
     cursor: pointer;
 }
+.navlinks ul li:nth-child(5){
+    margin-right: 0;
+    padding-right: 0;
+}
+
 .navlinks ul li::after{
     content: '';
     position: absolute;
@@ -74,9 +46,44 @@ footer{
     transition: transform 0.3s ease;
 }
 .navlinks ul li:hover::after{
-    transform: scaleX(1);
+    border-bottom: 2px solid #fff;
     transform-origin: right;
+    transform: scaleX(1);
 }
-.navlinks_copyright span{
-    padding: 1rem 0;
+.social_copyright{
+    align-items: flex-end;
+}
+.social_copyright ul{
+    display: flex;
+    align-items: flex-end;
+}
+.social_copyright ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 2rem;
+}
+.social_copyright ul li img{
+    pointer-events: none;
+}
+.social_copyright ul li:nth-child(4){
+    margin-right: 0;
+}
+.social_copyright ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    pointer-events: none;
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.social_copyright ul li:hover::after{
+    border-bottom: 2px solid #fff;
+    transform-origin: right;
+    transform: scaleX(1);
 }

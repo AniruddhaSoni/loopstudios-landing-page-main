@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
-@import 'header';
-@import 'interactive';
-@import 'creations';
-@import 'footer';
-// ## Colors
-
-// ### Primary
-
 $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
 $DarkGray: hsl(0, 0%, 55%);
@@ -21,4 +12,15 @@ $VeryDarkGray: hsl(0, 0%, 41%);
     font-size: 15px;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import 'header';
+@import 'interactive';
+@import 'creations';
+@import 'footer';
+@import 'responsive';
+// ## Colors
+
+// ### Primary
+
+
 

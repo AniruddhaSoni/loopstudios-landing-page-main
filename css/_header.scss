@@ -25,6 +25,9 @@
     font-size: 3rem;
     cursor: pointer;
 }
+.hamburger_menu{
+    display: none;
+}
 .navItems ul{    
     display: flex;
 }
@@ -61,15 +64,15 @@
 
 .hero{
     margin-top: 6rem;
-    max-width: 55%;
-    border: 2px solid #fff;
 }
 .hero_text{
+    max-width: 65%;
     font-family: 'Josefin Sans', sans-serif;
     padding: 2.75rem;
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 100;
+    border: 2px solid #fff;
 }
 
 // header done
