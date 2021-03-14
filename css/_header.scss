@@ -29,16 +29,39 @@
     display: flex;
 }
 .navItems ul li{
+    padding: 1rem 0;
+    position: relative;
     list-style: none;
     margin-right: 2rem;
     cursor: pointer;
 }
 .navItems ul li:nth-child(5){
     margin-right: 0;
+    padding-right: 0;
 }
+
+.navItems ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.navItems ul li:hover::after{
+    border-bottom: 2px solid #fff;
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
 .hero{
     margin-top: 6rem;
-    max-width: 62%;
+    max-width: 55%;
     border: 2px solid #fff;
 }
 .hero_text{
