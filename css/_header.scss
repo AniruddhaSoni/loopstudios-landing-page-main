@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     font-family: 'Alata', sans-serif;
     font-weight: 900;
@@ -8,42 +8,109 @@
     min-height: 85vh;
     color: #fff;
 }
-.header_container{
+
+.header_container {
     padding: 0 10rem;
     min-height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.35);
 }
-.navbar{
+
+.navbar {
     padding: 4rem 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     letter-spacing: 0.1rem;
 }
-.logo{
+
+.logo {
     font-size: 3rem;
     cursor: pointer;
 }
-.hamburger_menu{
-    display: none;
+
+.hamburger_menu {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 5;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
 }
-.navItems ul{    
+
+.hamburger_header {
+    display: flex;
+    padding: 4rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.padding{
+    padding: 1rem;
+}
+
+.hamburger_navigation {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.hamburger_navigation ul li {
+    width: min-content;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.hamburger_navigation ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.hamburger_navigation ul li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.active{
+    display: block;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+
+}
+
+.navItems ul {
     display: flex;
 }
-.navItems ul li{
+
+.navItems ul li {
     padding: 1rem 0;
     position: relative;
     list-style: none;
     margin-right: 2rem;
     cursor: pointer;
 }
-.navItems ul li:nth-child(5){
+
+.navItems ul li:nth-child(5) {
     margin-right: 0;
     padding-right: 0;
 }
 
-.navItems ul li::after{
+.navItems ul li::after {
     content: '';
     position: absolute;
     top: 0;
@@ -56,16 +123,17 @@
     transform-origin: left;
     transition: transform 0.3s ease;
 }
-.navItems ul li:hover::after{
+
+.navItems ul li:hover::after {
     border-bottom: 2px solid #fff;
     transform-origin: right;
     transform: scaleX(1);
 }
-
-.hero{
+.hero {
     margin-top: 6rem;
 }
-.hero_text{
+
+.hero_text {
     max-width: 65%;
     font-family: 'Josefin Sans', sans-serif;
     padding: 2.75rem;
